@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2023-09-07)
+
+
+### Features
+
+* :sparkles: add new components ([fcd2309](https://github.com/rotciv-ohlavrac/vector-ui/commit/fcd2309fc04e913ddc3bdfa0243b8b2fab304f36))
+
 ## [2.0.0](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.11...v2.0.0) (2023-06-26)
 
 
