@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "storybook/test";
-import { Button } from "./Button";
+import { Root } from "./Root";
 
 const meta = {
-  title: "atoms/Button",
-  component: Button,
+  title: "atoms/ButtonRoot",
+  component: Root,
   parameters: {
     layout: "centered",
   },
@@ -14,7 +14,7 @@ const meta = {
     disabled: { control: "boolean" },
   },
   args: { onClick: fn(), children: "Click Me" },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Root>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -26,6 +26,6 @@ export const Default: Story = {
 export const Disabled: Story = {
   args: {
     disabled: true,
-    children: "Disabled Button",
+    children: "Disabled Root",
   },
 };

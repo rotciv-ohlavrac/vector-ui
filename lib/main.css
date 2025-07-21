@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.darkerCurrentColor {
+  color: color-mix(in oklab, black 30%, currentColor);
+}

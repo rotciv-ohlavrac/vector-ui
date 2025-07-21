@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import { Button } from "./Button";
+import { Root } from "./Root";
 
-describe("(Atoms) Button test suite", () => {
+describe("(Atoms) ButtonRoot test suite", () => {
   it("should render correctly", () => {
-    render(<Button />);
+    render(<Root />);
     expect(screen.getByTestId("component-input-container")).toBeTruthy();
   });
 });
