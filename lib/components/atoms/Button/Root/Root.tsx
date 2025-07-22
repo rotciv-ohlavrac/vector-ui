@@ -1,6 +1,6 @@
 import React from "react";
 import { cva } from "class-variance-authority";
-import { Size, Variant } from "../../../../types";
+import type { Variant, Size } from "@/types";
 
 interface ButtonRootProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -38,7 +38,7 @@ function ButtonRoot({
     <button
       className={`${buttonStyles({ size, variant })} ${className}`}
       {...props}
-      data-testid="component-button"
+      data-testid="component-button-root"
     />
   );
 }
