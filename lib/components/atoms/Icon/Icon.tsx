@@ -1,7 +1,7 @@
 import React from "react";
 import * as Icons from "../../icons";
 import { cva } from "class-variance-authority";
-import { Size } from "@/types";
+import type { Size } from "@/types";
 
 interface IconProps
   extends Omit<React.HTMLAttributes<HTMLSpanElement>, "children"> {
@@ -27,7 +27,11 @@ function Icon({
 }: IconProps) {
   const IconComponent = Icons[icon];
   return (
-    <span className={`${iconStyles({ size })} ${className}`} {...props}>
+    <span
+      data-testid="component-icon"
+      className={`${iconStyles({ size })} ${className}`}
+      {...props}
+    >
       <IconComponent />
     </span>
   );
