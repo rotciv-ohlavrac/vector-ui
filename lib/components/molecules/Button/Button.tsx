@@ -1,7 +1,7 @@
 import { ButtonAtoms, Icon } from "@/components/atoms";
-import type { IconProps } from "@/components/atoms";
-import { Side } from "@/types";
 import { cva } from "class-variance-authority";
+import type { IconProps } from "@/components/atoms";
+import type { Side } from "@/types";
 
 interface CustomIconProps extends IconProps {
   side?: Side;
